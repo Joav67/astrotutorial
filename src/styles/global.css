@@ -3,6 +3,10 @@ html {
   background-color: #3F354F;
 }
 
+title {
+  margin-top: 100px;
+}
+
 body {
   margin: 0 auto;
   width: 100%;
