@@ -71,6 +71,7 @@ a:link {
 
 .logo img {
   height: 50px;
+  float:right;
 }
 
 .expanded {
