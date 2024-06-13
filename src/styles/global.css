@@ -68,6 +68,10 @@ a:link {
   background-color: #7B4B6B;  
 }
 
+.logo {
+  height: 150px;
+}
+
 .expanded {
   display: unset;
 }
