@@ -9,7 +9,7 @@ body {
   max-width: 1000px;
   padding: 1rem;
   line-height: 1.5;
-
+  color:#ff9776;
 }
 
 * {
@@ -71,7 +71,7 @@ a:link {
 
 .logo img {
   height: 50px;
-  float:right;
+  float:left;
 }
 
 .expanded {
