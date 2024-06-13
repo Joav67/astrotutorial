@@ -74,6 +74,10 @@ a:link {
   float:left;
 }
 
+.nav_wrapper {
+  margin-top: 50px;
+}
+
 .expanded {
   display: unset;
 }
