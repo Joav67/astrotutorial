@@ -4,6 +4,7 @@ import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 
 const { pageTitle } = Astro.props;
+const { titleImage } = Astro.props;
 ---
 
 <html lang="en">
@@ -15,18 +16,19 @@ const { pageTitle } = Astro.props;
     <title>{pageTitle}</title>
   </head>
   <body>
-    
     <Header />
 
-    <h1>{pageTitle}</h1>
-    
-    <slot />
+    <div class="page">
+      <h1>{pageTitle}</h1>
 
+      <img class="title-img" src={titleImage} />
+
+      <slot />
+    </div>
     <Footer />
-    
+
     <script>
       import "../scripts/menu.js";
     </script>
-
   </body>
 </html>
