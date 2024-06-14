@@ -77,14 +77,14 @@ a:link {
 
 .header {
   height: 50px;
-  margin-top: 50px;
+  margin-top: 500px;
 }
 
-/*
+
 .nav_wrapper {
   margin-top: 50px;
 }
-  */
+
 
 .expanded {
   display: unset;
