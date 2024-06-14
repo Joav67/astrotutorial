@@ -45,42 +45,31 @@ a:link {
 }
 
 .nav-links {
-  width: 100%;
-  top: 5rem;
-  left: 48px;
   background-color: #ff9776;
   display: none;
   margin: 0;
+  width: 100%;
+  border-bottom: 3px solid gray;
 }
 
 .nav-links a {
-  float: right;
-  display: block;
   text-align: center;
-  padding: 10px 0;
   text-decoration: none;
   font-size: 1.2rem;
-  font-weight: bold;
   text-transform: uppercase;
 }
 
 .nav-links a:hover,
 .nav-links a:focus {
-  background-color: #7b4b6b;
+  border-bottom: 3px solid #d0d0d0;
+  margin-bottom: -3px;
 }
 
 /* img inside header */
 .logo img {
   height: 50px;
-  float: left;
-}
-
-.nav_wrapper {
-  margin-top: 50px;
-}
-
-.page {
-  margin-top: 130px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .title-img {
@@ -96,7 +85,6 @@ a:link {
 
 @media screen and (min-width: 636px) {
   .nav-links {
-    margin-left: 5em;
     display: block;
     position: static;
     width: auto;
@@ -110,5 +98,4 @@ a:link {
   .hamburger {
     display: none;
   }
-
 }
