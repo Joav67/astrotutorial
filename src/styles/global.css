@@ -69,14 +69,22 @@ a:link {
   background-color: #7B4B6B;  
 }
 
+/* img inside header */
 .logo img {
   height: 50px;
   float:left;
 }
 
+.header {
+  height: 50px;
+  margin-top: 50px;
+}
+
+/*
 .nav_wrapper {
   margin-top: 50px;
 }
+  */
 
 .expanded {
   display: unset;
