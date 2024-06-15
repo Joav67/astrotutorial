@@ -1,9 +1,33 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pageTitle = "Home Page";
-const titleImage = "/images/cnc.jpg";
+const blockLeftImage = "/images/cnc.jpg";
+const blockLeftTitle = "Titel 1";
+const blockLeftContent =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Phasellus vestibulum lorem sed risus ultricies tristique. Libero enim sed faucibus turpis in. Mauris vitae ultricies leo integer malesuada nunc. Sed vulputate odio ut enim blandit volutpat. Magna etiam tempor orci eu lobortis elementum. Vitae justo eget magna fermentum iaculis eu. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Massa enim nec dui nunc mattis enim ut tellus elementum. Posuere lorem ipsum dolor sit amet consectetur. Neque egestas congue quisque egestas diam in arcu. Non diam phasellus vestibulum lorem sed risus ultricies.";
+
+const blockRightImage1 = "/images/cnc.jpg";
+const blockRightTitle1 = "Titel 2";
+const blockRightContent1 = "Pindakaas is lekker";
+
+const blockRightImage2 = "/images/cnc.jpg";
+const blockRightTitle2 = "Titel 2";
+const blockRightContent2 = "Pindakaas is lekker";
 ---
-<BaseLayout pageTitle={pageTitle} titleImage={titleImage}>
-  <h2>My awesome blog subtitle</h2>
-</BaseLayout>
+
+<BaseLayout
+  pageTitle={pageTitle}
+
+  blockLeftImage={blockLeftImage}
+  blockLeftTitle={blockLeftTitle}
+  blockLeftContent={blockLeftContent}
+
+  blockRightImage1={blockRightImage1}
+  blockRightTitle1={blockRightTitle1}
+  blockRightContent1={blockRightContent1}
+
+  blockRightImage2={blockRightImage2}
+  blockRightTitle2={blockRightTitle2}
+  blockRightContent2={blockRightContent2}
+/>

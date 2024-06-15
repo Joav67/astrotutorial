@@ -1,0 +1,15 @@
+---
+import "../styles/global.css";
+
+const { pageTitle} = Astro.props
+---
+
+<div class="page">
+  <div class="top-bar">
+    <h2 class="title">{pageTitle}</h2>
+    <h2 class="top-right">
+      <a href="contact"><img style="height: 15px;" src="./Mail.svg"></a>
+      | Pindakaas
+    </h2>
+  </div>
+</div>

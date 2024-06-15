@@ -1,0 +1,36 @@
+---
+const {
+  blockLeftImage,
+  blockLeftTitle,
+  blockLeftContent,
+  blockRightImage1,
+  blockRightTitle1,
+  blockRightContent1,
+  blockRightImage2,
+  blockRightTitle2,
+  blockRightContent2,
+} = Astro.props;
+---
+
+<div class="page-wrapper">
+  <div class="left-block">
+    <img class="block-img" src={blockLeftImage} />
+    <h3>{blockLeftTitle}</h3>
+    <p>
+      {blockLeftContent}
+    </p>
+  </div>
+  <div class="right-block">
+    <img class="block-img" src={blockRightImage1} />
+    <h3>{blockRightTitle1}</h3>
+    <p>
+      {blockRightContent1}
+    </p>
+    <img class="block-img" src={blockRightImage2} />
+    <h3>{blockRightTitle2}</h3>
+    <p>
+      {blockRightContent2}
+    </p>
+  </div>
+
+</div>

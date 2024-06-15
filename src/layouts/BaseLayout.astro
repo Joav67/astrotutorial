@@ -1,11 +1,25 @@
 ---
 import Header from "../components/Header.astro";
+import Topbar from "../components/Topbar.astro";
 import Footer from "../components/Footer.astro";
+import Content from "../components/Content.astro";
 import Logo from "../components/Logo.astro";
 import "../styles/global.css";
 
 const { pageTitle } = Astro.props;
-const { titleImage } = Astro.props;
+
+const { blockLeftImage } = Astro.props;
+const { blockLeftTitle } = Astro.props;
+const { blockLeftContent } = Astro.props;
+
+const { blockRightImage1 } = Astro.props;
+const { blockRightTitle1 } = Astro.props;
+const { blockRightContent1 } = Astro.props;
+
+const { blockRightImage2 } = Astro.props;
+const { blockRightTitle2 } = Astro.props;
+const { blockRightContent2 } = Astro.props;
+
 ---
 
 <html lang="en">
@@ -17,22 +31,29 @@ const { titleImage } = Astro.props;
     <title>{pageTitle}</title>
   </head>
   <body>
+    <Topbar pageTitle={pageTitle} />
+    <Logo />
+    <Header />
 
+    <Content 
+    {blockLeftImage} 
+    {blockLeftTitle}
+    {blockLeftContent} 
     
+    {blockRightImage1}
+    {blockRightTitle1}
+    {blockRightContent1}
+    
+    {blockRightImage2}
+    {blockRightTitle2}
+    {blockRightContent2}/>
 
-    <div class="page">
-      <h2>{pageTitle}</h2>
-      <Logo />
-      <Header />
-
-      <img class="title-img" src={titleImage} />
-
-      <slot />
-    </div>
-    <Footer />
-
-    <script>
-      import "../scripts/menu.js";
-    </script>
+    <slot />
   </body>
+
+  <Footer />
+
+  <script>
+    import "../scripts/menu.js";
+  </script>
 </html>
