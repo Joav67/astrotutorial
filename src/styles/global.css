@@ -67,6 +67,7 @@ a:link {
 
 .nav-links a:hover,
 .nav-links a:focus {
+  color: #2f2b3a;
   border-bottom: 2px solid #2f2b3a;
   margin-bottom: -2px;
 }

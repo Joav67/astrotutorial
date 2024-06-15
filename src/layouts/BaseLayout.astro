@@ -4,6 +4,7 @@ import Topbar from "../components/Topbar.astro";
 import Footer from "../components/Footer.astro";
 import Content from "../components/Content.astro";
 import Logo from "../components/Logo.astro";
+import ViewTransitions from "astro/components/ViewTransitions.astro";
 import "../styles/global.css";
 
 const { pageTitle } = Astro.props;
@@ -29,6 +30,7 @@ const { blockRightContent2 } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
+    <ViewTransitions />
   </head>
   <body>
     <Topbar pageTitle={pageTitle} />
